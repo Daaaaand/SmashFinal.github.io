@@ -1,4 +1,65 @@
-.Lore_druida {
-    width: 100%;
-    border-top: 50px;
+:root {
+    --primario: ; 
+    --primarioOscuro: ;
+    --secundario: ;
+    --secundarioOscuro: ;
+    --blanco: rgb(243, 235, 235);
+    --negro: #070317;
+
+    --fuentePrincipal: '', cursive;
 }
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+    /** Globales **/
+body {
+    background-color: var(--negro);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco)
+}
+a {
+    text-decoration: none;
+
+}
+img {
+    max-width: 100%;
+}
+/** Globales **/
+
+/**Lore**/
+.lore_druida, .lore_warrior {
+    margin-top: 0.3rem;
+}
+
+.lore_druida {
+    transition: all 0.2s ease;
+    cursor: pointer
+}
+
+.lore_druida:hover {
+    box-shadow: 5px 6px 6px 2px var(--negro);
+    transform: scale(1.1)
+}
+
+.lore_warrior {
+    transition: all 0.2s ease;
+    cursor: pointer
+}
+
+.lore_warrior:hover {
+    box-shadow: 5px 6px 6px 2px  var(--negro);
+    transform: scale(1.1)
+}
+
+/**Lore**/
