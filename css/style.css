@@ -160,7 +160,7 @@ padding: 1rem;
     margin-bottom: 7rem;
 }
 
-.contactanos {
+.contactanos__button {
     display:flex;
     justify-content: center;
     margin-top: 8rem;
@@ -227,6 +227,7 @@ padding: 1rem;
 .icono3 {
     grid-row: 3 / 4;
 }
+
 
 /** Formulario **/
 
