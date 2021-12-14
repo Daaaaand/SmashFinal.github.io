@@ -401,5 +401,5 @@ textarea:hover {
 .footer__texto{
     font-family: var(--fuentePrincipal);
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
 }
