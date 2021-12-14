@@ -62,4 +62,24 @@ img {
     transform: scale(1.1)
 }
 
+.lore_warlock {
+    transition: all 0.2s ease;
+    cursor: pointer
+}
+
+.lore_warlock:hover {
+    box-shadow: 5px 6px 6px 2px  var(--negro);
+    transform: scale(1.1)
+}
+
+.lore_trol {
+    transition: all 0.2s ease;
+    cursor: pointer
+}
+
+.lore_trol:hover {
+    box-shadow: 5px 6px 6px 2px  var(--negro);
+    transform: scale(1.1)
+}
+
 /**Lore**/
