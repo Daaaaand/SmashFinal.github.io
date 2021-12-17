@@ -1,0 +1,65 @@
+@import "variables";
+/** Grid **/
+.grid {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/** Productos**/
+.Titulo__tienda {
+    display: flex;
+    justify-content: center;
+    font-family: $fuentePrincipal;
+    font-size: 5rem;
+    color: $blanco;
+}
+.producto {
+background-color: $primarioOscuro;
+padding: 1rem;
+    .producto__imagen {
+        width: 100%;
+    }
+    .producto__nombre {
+        font-size: 4rem;
+        font-family: $fuentePrincipal;
+        margin: 1rem 0;
+        text-align: center;
+        line-height: 1.2;
+    }
+    .producto__precio {
+        font-size: 2.8rem;
+        color: $secundario;
+        font-family: $fuentePrincipal;
+        margin: 1rem 0;
+        text-align: center;
+        line-height: 1.2;
+    }
+}
+
+/** Gráficos **/
+.grafico {
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+}
+.grafico--camisas {
+    grid-row: 2 / 3;
+    background-image: url(../Fotos/remera_smashfinal.jpg);
+}
+
+/** Producto animacion **/
+.producto__imagen {
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 5px 6px 6px 2px $negro;
+    transform: scale(1.1)
+    }
+}

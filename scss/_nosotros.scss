@@ -1,0 +1,44 @@
+@import "variables";
+
+/** Nosotros **/
+
+.nosotros__imagen {
+    display:block;
+    margin:auto;
+    width: 50rem;
+}
+
+.nosotros__contenido {
+    margin-bottom: 7rem;
+}
+
+.contactanos__button {
+    display:flex;
+    justify-content: center;
+    margin-top: 8rem;
+    font-size: 3rem;
+    background-color: $primarioOscuro;
+    color: $secundarioOscuro;
+}
+
+/** Nosotros GRID **/
+
+.nosotros__Grid {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    .nosotros__Grid--imagen {
+        grid-row: 1  / 2;
+        width: 35rem;
+    }  
+}
+@media (min-width: 768px) {
+    .nosotros__Grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        .nosotros__Grid--imagen {
+            grid-column: 2  / 3;
+            align-self: center;
+            justify-self: center;
+        }  
+    }
+}
