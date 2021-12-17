@@ -1,0 +1,46 @@
+// Imports
+
+@import "index";
+@import "tienda";
+@import "nosotros";
+@import "contactanos";
+@import "variables";
+
+/** Box **/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+    /** Globales **/
+body {
+    background-color: $negro;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    p{
+        font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $blanco;
+    }
+    a{
+        text-decoration: none;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+
+/** Footer**/
+.footer {
+    background-color: $primarioOscuro;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    .footer__texto {
+        font-family: $fuentePrincipal;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
