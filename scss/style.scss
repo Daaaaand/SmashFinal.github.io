@@ -1,0 +1,42 @@
+// Imports
+
+@import "index";
+@import "tienda";
+@import "nosotros";
+@import "contactanos";
+@import "variables";
+@import "minx";
+@import "maps";
+@import "extends";
+
+
+/** Box **/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+    /** Globales **/
+body {
+    @extend %body;
+    p{
+        @extend %p;
+    }
+    a{
+        @extend %a;
+    }
+    img{
+        @extend %img;
+    }
+}
+
+/** Footer**/
+.footer {
+    @extend %footer;
+    .footer__texto {
+        @extend %footer__texto;
+    }
+}

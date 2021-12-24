@@ -1,3 +1,5 @@
+
+@import "extends";
 @import "variables";
 
 /** Nosotros **/
@@ -5,7 +7,7 @@
 .nosotros__imagen {
     display:block;
     margin:auto;
-    width: 50rem;
+    @include imagenes (50rem, none, none, none);
 }
 
 .nosotros__contenido {
@@ -13,8 +15,7 @@
 }
 
 .contactanos__button {
-    display:flex;
-    justify-content: center;
+    @extend %flex;
     margin-top: 8rem;
     font-size: 3rem;
     background-color: $primarioOscuro;

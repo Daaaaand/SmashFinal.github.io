@@ -1,45 +1,52 @@
+@import "minx";
+@import "extends";
+@import "maps";
 @import "variables";
 /** Grid **/
 .grid {
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
 }
-@media (min-width: 768px) {
+@media (min-width: 0px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+    
+}
+@media (min-width: 1024px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }
+
+
 /** Productos**/
 .Titulo__tienda {
-    display: flex;
-    justify-content: center;
-    font-family: $fuentePrincipal;
-    font-size: 5rem;
-    color: $blanco;
+    @extend %flex;
+    @include letras (3rem , $blanco)
 }
 .producto {
 background-color: $primarioOscuro;
 padding: 1rem;
-    .producto__imagen {
-        width: 100%;
+    .producto__imagen{
+        @include imagenes (100%, none, none, none);
     }
     .producto__nombre {
-        font-size: 4rem;
-        font-family: $fuentePrincipal;
+        @include letras (3rem , $blanco);
         margin: 1rem 0;
         text-align: center;
         line-height: 1.2;
     }
     .producto__precio {
-        font-size: 2.8rem;
-        color: $secundario;
-        font-family: $fuentePrincipal;
+        @include letras (2rem , $secundario);
         margin: 1rem 0;
         text-align: center;
         line-height: 1.2;
     }
 }
+
 
 /** Gráficos **/
 .grafico {
@@ -54,12 +61,12 @@ padding: 1rem;
 }
 
 /** Producto animacion **/
-.producto__imagen {
+.producto img{
     transition: all 0.2s ease;
-    cursor: pointer;
+    cursor: map-get($animacion, estado-cursor);
 
     &:hover {
-        box-shadow: 5px 6px 6px 2px $negro;
-    transform: scale(1.1)
+    box-shadow: map-get($animacion, box-shadow);
+    transform: map-get($animacion, escala)
     }
 }

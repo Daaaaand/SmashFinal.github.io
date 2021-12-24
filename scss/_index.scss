@@ -1,3 +1,5 @@
+
+@import "maps";
 @import "variables";
 
 /**Lore Animacion*/
@@ -7,37 +9,37 @@
 
 .lore_druida {
     transition: all 0.2s ease;
-    cursor: pointer;
+    cursor: map-get($animacion, estado-cursor);
     &:hover {
-    box-shadow: 5px 6px 6px 2px $negro;
-    transform: scale(1.1)
+    box-shadow: map-get($animacion, box-shadow);
+    transform: map-get($animacion, escala)
     }
 }
 
 .lore_warrior {
     transition: all 0.2s ease;
-    cursor: pointer;
+    cursor: map-get($animacion, estado-cursor);
     &:hover {
-    box-shadow: 5px 6px 6px 2px $negro;
-    transform: scale(1.1)
+    box-shadow: map-get($animacion, box-shadow);
+    transform: map-get($animacion, escala)
     }
     
 }
 
 .lore_warlock {
     transition: all 0.2s ease;
-    cursor: pointer;
+    cursor: map-get($animacion, estado-cursor);
     &:hover {
-    box-shadow: 5px 6px 6px 2px $negro;
-    transform: scale(1.1)
+    box-shadow: map-get($animacion, box-shadow);
+    transform: map-get($animacion, escala)
     }
 }
 
 .lore_trol {
     transition: all 0.2s ease;
-    cursor: pointer;
+    cursor: map-get($animacion, estado-cursor);
     &:hover {
-    box-shadow: 5px 6px 6px 2px $negro;
-    transform: scale(1.1)
+    box-shadow: map-get($animacion, box-shadow);
+    transform: map-get($animacion, escala)
     }
 }

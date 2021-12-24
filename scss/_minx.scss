@@ -1,0 +1,21 @@
+@import "variables";
+/** Minx **/
+
+@mixin imagenes ($widht, $height, $margin, $padding){
+    width: $widht;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin letras ($font-size, $color) {
+    font-size: $font-size;
+    color: $color;
+
+    @if $font-size >= 1rem {
+        font-family: $fuentePrincipal;
+    } @else {
+        font-size: 0.875rem;
+        color: #e2dedb;
+    }
+}

@@ -1,17 +1,17 @@
+@import "minx";
+@import "extends";
+@import "maps";
 @import "variables";
 
 /** Contactanos**/
 
 .titulo__yo{
-    display: flex;
-    justify-content: center;
-    font-size: 5rem;
-    color: $secundarioOscuro;
+    @extend %flex;
+    @include letras (5rem , $secundarioOscuro);
 }
 
 .imagen__contactanos {
-    width: 12rem;
-    margin-top: 4rem;
+    @include imagenes (12rem, none, 4rem 0 0 0, none);
 }
 
 /** Contactanos Grid**/
@@ -35,8 +35,7 @@
 /** Formulario **/
 
 .contactanos__subtitulo {
-    display: flex;
-    justify-content: center;
+    @extend %flex;
     font-size: 5rem;
     color: $secundarioOscuro;
     margin-top: 4rem;
@@ -44,10 +43,9 @@
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #aca49c;
-    font-size: 0.875em;
+    font-size: 0.875rem;
     &:hover {
-        color: #e2dedb;
-        font-size: 0.875em;
+        @include letras (0.875rem , $secundarioOscuro);
     }
 }
 
@@ -60,10 +58,9 @@ input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholde
 
 input::-moz-placeholder, textarea::-moz-placeholder {
     color: #aca49c;
-    font-size: 0.875em;
+    font-size: 0.875rem;
     &:hover {
-        color: #e2dedb;
-        font-size: 0.875em;
+        @include letras (0.875rem , $secundarioOscuro);
     }
 }
 
@@ -76,10 +73,9 @@ input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
 
 input::placeholder, textarea::placeholder {
     color: #aca49c;
-    font-size: 0.875em;
+    font-size: 0.875rem;
     &:hover {
-        color: #e2dedb;
-        font-size: 0.875em;
+        @include letras (0.875rem , $secundarioOscuro);
     }
 }
 
@@ -92,10 +88,9 @@ input:focus::placeholder, textarea::focus:placeholder {
 
 input::-ms-placeholder, textarea::-ms-placeholder {
     color: #aca49c;
-    font-size: 0.875em;
+    font-size: 0.875rem;
     &:hover {
-        color: #e2dedb;
-        font-size: 0.875em;
+        @include letras (0.875rem , $secundarioOscuro);
     }
 }
 
@@ -145,7 +140,7 @@ input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
         
         color: #726659;
         font-family: 'Lato', sans-serif;
-        font-size: 0.875em;
+        font-size: 0.875rem;
         
         border: solid 1px #b3aca7;
         
@@ -162,14 +157,14 @@ input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
         width: 502px;
         
         padding: 0;
-        margin: -5px 0px 0px 0px;
+        margin: -1px 0px 0px 0px;
         
         font-family: 'Lato', sans-serif;
-        font-size: 0.875em;
+        font-size: 0.875rem;
         color: #b3aca7;
         
         outline:none;
-        cursor: pointer;
+        cursor: map-get($animacion, estado-cursor);
         
         border: solid 1px #b3aca7;
         &:hover {
