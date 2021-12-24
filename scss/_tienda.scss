@@ -1,3 +1,6 @@
+@import "minx";
+@import "extends";
+@import "maps";
 @import "variables";
 /** Grid **/
 .grid {
@@ -21,29 +24,23 @@
 
 /** Productos**/
 .Titulo__tienda {
-    display: flex;
-    justify-content: center;
-    font-family: $fuentePrincipal;
-    font-size: 3rem;
-    color: $blanco;
+    @extend %flex;
+    @include letras (3rem , $blanco)
 }
 .producto {
 background-color: $primarioOscuro;
 padding: 1rem;
     .producto__imagen{
-        width: 100%;
+        @include imagenes (100%, none, none, none);
     }
     .producto__nombre {
-        font-size: 3rem;
-        font-family: $fuentePrincipal;
+        @include letras (3rem , $blanco);
         margin: 1rem 0;
         text-align: center;
         line-height: 1.2;
     }
     .producto__precio {
-        font-size: 2rem;
-        color: $secundario;
-        font-family: $fuentePrincipal;
+        @include letras (2rem , $secundario);
         margin: 1rem 0;
         text-align: center;
         line-height: 1.2;
@@ -66,10 +63,10 @@ padding: 1rem;
 /** Producto animacion **/
 .producto img{
     transition: all 0.2s ease;
-    cursor: pointer;
+    cursor: map-get($animacion, estado-cursor);
 
     &:hover {
-        box-shadow: 5px 6px 6px 2px $negro;
-    transform: scale(1.1)
+    box-shadow: map-get($animacion, box-shadow);
+    transform: map-get($animacion, escala)
     }
 }

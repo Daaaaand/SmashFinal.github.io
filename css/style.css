@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/** Maps **/
 /**Lore Animacion*/
 .lore_druida, .lore_warrior, .lore_warlock, .lore_trol {
   margin-top: 0.3rem;
@@ -40,6 +41,46 @@
   transform: scale(1.1);
 }
 
+/** Minx **/
+/** Extends **/
+.contactanos__subtitulo, .titulo__yo, .contactanos__button, .Titulo__tienda {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #070317;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+body p {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f3ebeb;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body img {
+  max-width: 100%;
+}
+
+.footer {
+  background-color: #050211;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer .footer__texto {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/** Maps **/
 /** Grid **/
 .grid {
   display: grid;
@@ -60,11 +101,9 @@
 }
 /** Productos**/
 .Titulo__tienda {
-  display: flex;
-  justify-content: center;
-  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
   color: #f3ebeb;
+  font-family: "Montserrat", sans-serif;
 }
 
 .producto {
@@ -73,9 +112,13 @@
 }
 .producto .producto__imagen {
   width: 100%;
+  height: none;
+  margin: none;
+  padding: none;
 }
 .producto .producto__nombre {
   font-size: 3rem;
+  color: #f3ebeb;
   font-family: "Montserrat", sans-serif;
   margin: 1rem 0;
   text-align: center;
@@ -113,11 +156,52 @@
   transform: scale(1.1);
 }
 
+/** Extends **/
+.contactanos__subtitulo, .titulo__yo, .contactanos__button, .Titulo__tienda {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #070317;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+body p {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f3ebeb;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body img {
+  max-width: 100%;
+}
+
+.footer {
+  background-color: #050211;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer .footer__texto {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 /** Nosotros **/
 .nosotros__imagen {
   display: block;
   margin: auto;
   width: 50rem;
+  height: none;
+  margin: none;
+  padding: none;
 }
 
 .nosotros__contenido {
@@ -125,8 +209,6 @@
 }
 
 .contactanos__button {
-  display: flex;
-  justify-content: center;
   margin-top: 8rem;
   font-size: 3rem;
   background-color: #050211;
@@ -154,17 +236,58 @@
     justify-self: center;
   }
 }
-/** Contactanos**/
-.titulo__yo {
+/** Minx **/
+/** Extends **/
+.contactanos__subtitulo, .titulo__yo, .Titulo__tienda, .contactanos__button {
   display: flex;
   justify-content: center;
+}
+
+body {
+  background-color: #070317;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+body p {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f3ebeb;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body img {
+  max-width: 100%;
+}
+
+.footer {
+  background-color: #050211;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer .footer__texto {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/** Maps **/
+/** Contactanos**/
+.titulo__yo {
   font-size: 5rem;
   color: #020268;
+  font-family: "Montserrat", sans-serif;
 }
 
 .imagen__contactanos {
   width: 12rem;
-  margin-top: 4rem;
+  height: none;
+  margin: 4rem 0 0 0;
+  padding: none;
 }
 
 /** Contactanos Grid**/
@@ -184,8 +307,6 @@
 
 /** Formulario **/
 .contactanos__subtitulo {
-  display: flex;
-  justify-content: center;
   font-size: 5rem;
   color: #020268;
   margin-top: 4rem;
@@ -193,11 +314,13 @@
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #aca49c;
-  font-size: 0.875em;
+  font-size: 0.875rem;
 }
 input::-webkit-input-placeholder:hover, textarea::-webkit-input-placeholder:hover {
+  font-size: 0.875rem;
+  color: #020268;
+  font-size: 0.875rem;
   color: #e2dedb;
-  font-size: 0.875em;
 }
 
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
@@ -209,11 +332,13 @@ input:focus::-webkit-input-placeholder:hover, textarea:focus::-webkit-input-plac
 
 input::-moz-placeholder, textarea::-moz-placeholder {
   color: #aca49c;
-  font-size: 0.875em;
+  font-size: 0.875rem;
 }
 input::-moz-placeholder:hover, textarea::-moz-placeholder:hover {
+  font-size: 0.875rem;
+  color: #020268;
+  font-size: 0.875rem;
   color: #e2dedb;
-  font-size: 0.875em;
 }
 
 input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
@@ -225,11 +350,13 @@ input:focus::-moz-placeholder:hover, textarea:focus::-moz-placeholder:hover {
 
 input::placeholder, textarea::placeholder {
   color: #aca49c;
-  font-size: 0.875em;
+  font-size: 0.875rem;
 }
 input::placeholder:hover, textarea::placeholder:hover {
+  font-size: 0.875rem;
+  color: #020268;
+  font-size: 0.875rem;
   color: #e2dedb;
-  font-size: 0.875em;
 }
 
 input:focus::placeholder, textarea::focus:placeholder {
@@ -241,11 +368,13 @@ input:focus::placeholder:hover, textarea::focus:placeholder:hover {
 
 input::-ms-placeholder, textarea::-ms-placeholder {
   color: #aca49c;
-  font-size: 0.875em;
+  font-size: 0.875rem;
 }
 input::-ms-placeholder:hover, textarea::-ms-placeholder:hover {
+  font-size: 0.875rem;
+  color: #020268;
+  font-size: 0.875rem;
   color: #e2dedb;
-  font-size: 0.875em;
 }
 
 input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
@@ -289,7 +418,7 @@ input:focus::-ms-placeholder:hover, textarea:focus::-ms-placeholder:hover {
   outline: none;
   color: #726659;
   font-family: "Lato", sans-serif;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   border: solid 1px #b3aca7;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -303,9 +432,9 @@ input:focus::-ms-placeholder:hover, textarea:focus::-ms-placeholder:hover {
 #form .Mensaje {
   width: 502px;
   padding: 0;
-  margin: -5px 0px 0px 0px;
+  margin: -1px 0px 0px 0px;
   font-family: "Lato", sans-serif;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   color: #b3aca7;
   outline: none;
   cursor: pointer;
@@ -313,6 +442,46 @@ input:focus::-ms-placeholder:hover, textarea:focus::-ms-placeholder:hover {
 }
 #form .Mensaje:hover {
   color: #e2dedb;
+}
+
+/** Minx **/
+/** Maps **/
+/** Extends **/
+.Titulo__tienda, .contactanos__button, .titulo__yo, .contactanos__subtitulo {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #070317;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+body p {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f3ebeb;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body img {
+  max-width: 100%;
+}
+
+.footer {
+  background-color: #050211;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer .footer__texto {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 /** Box **/
@@ -326,33 +495,6 @@ html {
 }
 
 /** Globales **/
-body {
-  background-color: #070317;
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-body p {
-  font-size: 1.8rem;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #f3ebeb;
-}
-body a {
-  text-decoration: none;
-}
-body img {
-  max-width: 100%;
-}
-
 /** Footer**/
-.footer {
-  background-color: #050211;
-  padding: 1rem 0;
-  margin-top: 2rem;
-}
-.footer .footer__texto {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  font-size: 1.5rem;
-}
 
 /*# sourceMappingURL=style.css.map */
