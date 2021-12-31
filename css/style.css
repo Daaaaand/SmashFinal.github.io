@@ -289,7 +289,26 @@ body img {
   margin: 4rem 0 0 0;
   padding: none;
 }
+/** Contactanos **/
+.icono1 {
+  background-color: grey;
+  background-color: transparent;
 
+  filter:alpha(opacity=70);
+  -moz-opacity:.70;opacity:.70
+} 
+.icono2 {
+  background-color: grey;
+  background-color: transparent;
+  filter:alpha(opacity=70);
+  -moz-opacity:.70;opacity:.70
+} 
+.icono3 {
+  background-color: grey;
+  background-color: transparent;
+  filter:alpha(opacity=70);
+  -moz-opacity:.70;opacity:.70
+} 
 /** Contactanos Grid**/
 .grid__contactanos {
   display: grid;
@@ -297,27 +316,12 @@ body img {
 }
 .grid__contactanos .icono1 {
   grid-row: 1/2;
-  background-color: grey;
-  background-color: transparent;
-
-  filter:alpha(opacity=70);
-  -moz-opacity:.70;opacity:.70
 }
 .grid__contactanos .icono2 {
   grid-row: 2/3;
-  background-color: grey;
-  background-color: transparent;
-
-  filter:alpha(opacity=70);
-  -moz-opacity:.70;opacity:.70
 }
 .grid__contactanos .icono3 {
   grid-row: 3/4;
-  background-color: grey;
-  background-color: transparent;
-
-  filter:alpha(opacity=70);
-  -moz-opacity:.70;opacity:.70
 }
 
 /** Formulario **/
@@ -457,6 +461,30 @@ input:focus::-ms-placeholder:hover, textarea:focus::-ms-placeholder:hover {
 }
 #form .Mensaje:hover {
   color: #e2dedb;
+}
+
+@media (max-width: 728px) {
+  #form {
+    width: 200px;
+  }
+}
+
+@media (max-width: 728px) {
+  #form input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 728px) {
+  #form textarea{
+    width: 200px;
+  }
+}
+
+@media (max-width: 728px) {
+  #form .Mensaje{
+    width: 200px;
+  }
 }
 
 /** Minx **/
