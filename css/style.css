@@ -297,12 +297,27 @@ body img {
 }
 .grid__contactanos .icono1 {
   grid-row: 1/2;
+  background-color: grey;
+  background-color: transparent;
+
+  filter:alpha(opacity=70);
+  -moz-opacity:.70;opacity:.70
 }
 .grid__contactanos .icono2 {
   grid-row: 2/3;
+  background-color: grey;
+  background-color: transparent;
+
+  filter:alpha(opacity=70);
+  -moz-opacity:.70;opacity:.70
 }
 .grid__contactanos .icono3 {
   grid-row: 3/4;
+  background-color: grey;
+  background-color: transparent;
+
+  filter:alpha(opacity=70);
+  -moz-opacity:.70;opacity:.70
 }
 
 /** Formulario **/
