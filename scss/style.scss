@@ -34,8 +34,9 @@ body {
 }
     /**  Historia **/
 .h1__historia {
-    font-size: 2rem
-    
+    font-size: 2rem;
+    @extend %flex;
+    color: blue;
 } 
 
 /** Footer**/
