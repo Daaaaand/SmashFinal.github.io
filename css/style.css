@@ -474,7 +474,8 @@ body img {
    /**  Historia **/
 .h1__historia {
     font-size: 2rem;
-    @extend %flex;
+    display: flex;
+    justify-content: center;
     color: blue;
 } 
 
