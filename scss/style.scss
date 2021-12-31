@@ -32,6 +32,12 @@ body {
         @extend %img;
     }
 }
+    /**  Historia **/
+.h1__historia {
+    font-size: 2rem;
+    @extend %flex;
+    color: blue;
+} 
 
 /** Footer**/
 .footer {
