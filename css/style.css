@@ -471,6 +471,12 @@ body a {
 body img {
   max-width: 100%;
 }
+   /**  Historia **/
+.h1__historia {
+    font-size: 2rem;
+    @extend %flex;
+    color: blue;
+} 
 
 .footer {
   background-color: #050211;
