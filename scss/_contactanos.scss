@@ -1,174 +1,263 @@
-@import "minx";
-@import "extends";
-@import "maps";
-@import "variables";
 
-/** Contactanos**/
-
-.titulo__yo{
-    @extend %flex;
-    @include letras (5rem , $secundarioOscuro);
+#contact {
+    width: 100%;
+    height: 100%;
 }
 
-.imagen__contactanos {
-    @include imagenes (12rem, none, 4rem 0 0 0, none);
+.section-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 60px 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
 }
 
-/** Contactanos Grid**/
-
-.grid__contactanos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    .icono1 {
-        grid-row: 1 / 2;
-    }
-    
-    .icono2 {
-        grid-row: 2 / 3;
-    }
-    
-    .icono3 {
-        grid-row: 3 / 4;
-    }
-}
-
-/** Formulario **/
-
-.contactanos__subtitulo {
-    @extend %flex;
-    font-size: 5rem;
-    color: $secundarioOscuro;
-    margin-top: 4rem;
-}
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #aca49c;
-    font-size: 0.875rem;
-    &:hover {
-        @include letras (0.875rem , $secundarioOscuro);
-    }
-}
-
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-    color: #bbb5af;
-    &:hover {
-        color: #cbc6c1;
-    }
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-    color: #aca49c;
-    font-size: 0.875rem;
-    &:hover {
-        @include letras (0.875rem , $secundarioOscuro);
-    }
-}
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-    color: #bbb5af;
-    &:hover {
-        color: #cbc6c1;
-    }
-}
-
-input::placeholder, textarea::placeholder {
-    color: #aca49c;
-    font-size: 0.875rem;
-    &:hover {
-        @include letras (0.875rem , $secundarioOscuro);
-    }
-}
-
-input:focus::placeholder, textarea::focus:placeholder {
-    color: #bbb5af;
-    &:hover {
-        color: #cbc6c1;
-    }
-}
-
-input::-ms-placeholder, textarea::-ms-placeholder {
-    color: #aca49c;
-    font-size: 0.875rem;
-    &:hover {
-        @include letras (0.875rem , $secundarioOscuro);
-    }
-}
-
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-    color: #bbb5af;
-    &:hover {
-        color: #cbc6c1;
-    }
-}
-
-
-#form {
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
     position: relative;
-    width: 500px;
-    margin: 50px auto 100px auto;
-    input {
-        font-family: 'Lato', sans-serif;
-        font-size: 0.875em;
-        width: 470px;
-        height: 50px;
-        padding: 0px 15px 0px 15px;
-        
-        background: transparent;
-        outline: none;
-        color: #726659;
-        
-        border: solid 1px #b3aca7;
-        
-        transition: all 0.3s ease-in-out;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        &:hover {
-            background: #b3aca7;
-            color: #e2dedb;
-        }
-    }
+    max-width: 840px;
+}
+
+  /* Left contact page */
+.form-horizontal {
+    /*float: left;*/
+    max-width: 400px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+
+.form-control, 
+textarea {
+    max-width: 400px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+    .form-control, 
     textarea {
-        width: 470px;
-        max-width: 470px;
-        height: 110px;
-        max-height: 110px;
-        padding: 15px;
-        
-        background: transparent;
-        outline: none;
-        
-        color: #726659;
-        font-family: 'Lato', sans-serif;
-        font-size: 0.875rem;
-        
-        border: solid 1px #b3aca7;
-        
-        transition: all 0.3s ease-in-out;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        &:hover {
-            background: #b3aca7;
-            color: #e2dedb;
-        }
+        max-width: 250px;
     }
-    .Mensaje {
-        width: 502px;
-        
-        padding: 0;
-        margin: -1px 0px 0px 0px;
-        
-        font-family: 'Lato', sans-serif;
-        font-size: 0.875rem;
-        color: #b3aca7;
-        
-        outline:none;
-        cursor: map-get($animacion, estado-cursor);
-        
-        border: solid 1px #b3aca7;
-        &:hover {
-            color: #e2dedb;
-        }
+}
+.send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+@media (max-width: 768px) {
+    .send-button {
+        width: 250px;
+    }
+}
+
+.alt-send-button {
+    width: 378px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+}
+@media (max-width: 768px) {
+    .alt-send-button {
+        width: 200px;
+    }
+}
+.send-text {
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+}
+
+  /* Begin Right Contact Page */
+.direct-contact-container {
+    max-width: 400px;
+}
+
+  /* Location, Phone, Email Section */
+.contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+}
+
+.list-item {
+    line-height: 4;
+    color: #aaa;
+}
+
+.contact-text {
+    font: 300 18px 'Montserrat', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+}
+
+.place {
+    margin-left: 62px;
+}
+
+.phone {
+    margin-left: 56px;
+}
+
+.gmail {
+    margin-left: 53px;
+}
+
+.contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+  /* Social Media Icons */
+.social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-media-list li a {
+    color: #fff;
+}
+
+.social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+    background-color: #fff; 
+}
+
+.social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+    color: #000;
+}
+
+.copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+hr {
+    border-color: rgba(255,255,255,.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .direct-contact-container, .form-horizontal {
+        margin: 0 auto;
+    }  
+    
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 300px;
+    }    
+    .social-media-list li {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+    }
+    .social-media-list li:after {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 569px) {
+
+    .direct-contact-container, .form-wrapper {
+        float: none;
+        margin: 0 auto;
+    }  
+    .form-control, textarea {
+        margin: 0 auto;
+    }
+
+    
+    .name, .email, textarea {
+        width: 280px;
+    } 
+    
+    .direct-contact-container {
+        margin-top: 60px;
+        max-width: 280px;
+    }  
+    .social-media-list {
+        left: 0;
+    }
+    .social-media-list li {
+        height: 55px;
+        width: 55px;
+        line-height: 55px;
+        font-size: 2rem;
+    }
+    .social-media-list li:after {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+    
+}
+
+@media screen and (max-width: 410px) {
+    .send-button {
+        width: 99%;
     }
 }
