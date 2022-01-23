@@ -43,7 +43,7 @@
 
 /** Minx **/
 /** Extends **/
-.contactanos__subtitulo, .titulo__yo, .contactanos__button, .Titulo__tienda {
+.h1__historia, .Titulo__tienda {
   display: flex;
   justify-content: center;
 }
@@ -157,7 +157,7 @@ body img {
 }
 
 /** Extends **/
-.contactanos__subtitulo, .titulo__yo, .contactanos__button, .Titulo__tienda {
+.h1__historia, .Titulo__tienda {
   display: flex;
   justify-content: center;
 }
@@ -208,13 +208,6 @@ body img {
   margin-bottom: 7rem;
 }
 
-.contactanos__button {
-  margin-top: 8rem;
-  font-size: 3rem;
-  background-color: #050211;
-  color: #020268;
-}
-
 /** Nosotros GRID **/
 .nosotros__Grid {
   display: grid;
@@ -236,261 +229,274 @@ body img {
     justify-self: center;
   }
 }
-/** Minx **/
-/** Extends **/
-.contactanos__subtitulo, .titulo__yo, .Titulo__tienda, .contactanos__button {
-  display: flex;
-  justify-content: center;
+#contact {
+  width: 100%;
+  height: 100%;
 }
 
-body {
-  background-color: #070317;
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-
-body p {
-  font-size: 1.8rem;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #f3ebeb;
-}
-
-body a {
-  text-decoration: none;
-}
-
-body img {
-  max-width: 100%;
-}
-
-.footer {
-  background-color: #050211;
-  padding: 1rem 0;
-  margin-top: 2rem;
-}
-
-.footer .footer__texto {
-  font-family: "Montserrat", sans-serif;
+.section-header {
   text-align: center;
-  font-size: 1.5rem;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px "Montserrat", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
 }
 
-/** Maps **/
-/** Contactanos**/
-.titulo__yo {
-  font-size: 5rem;
-  color: #020268;
-  font-family: "Montserrat", sans-serif;
-}
-
-.imagen__contactanos {
-  width: 12rem;
-  height: none;
-  margin: 4rem 0 0 0;
-  padding: none;
-}
-/** Contactanos **/
-.icono1 {
-  background-color: grey;
-  background-color: transparent;
-
-  filter:alpha(opacity=70);
-  -moz-opacity:.70;opacity:.70
-} 
-.icono2 {
-  background-color: grey;
-  background-color: transparent;
-  filter:alpha(opacity=70);
-  -moz-opacity:.70;opacity:.70
-} 
-.icono3 {
-  background-color: grey;
-  background-color: transparent;
-  filter:alpha(opacity=70);
-  -moz-opacity:.70;opacity:.70
-} 
-/** Contactanos Grid**/
-.grid__contactanos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.grid__contactanos .icono1 {
-  grid-row: 1/2;
-}
-.grid__contactanos .icono2 {
-  grid-row: 2/3;
-}
-.grid__contactanos .icono3 {
-  grid-row: 3/4;
-}
-
-/** Formulario **/
-.contactanos__subtitulo {
-  font-size: 5rem;
-  color: #020268;
-  margin-top: 4rem;
-}
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #aca49c;
-  font-size: 0.875rem;
-}
-input::-webkit-input-placeholder:hover, textarea::-webkit-input-placeholder:hover {
-  font-size: 0.875rem;
-  color: #020268;
-  font-size: 0.875rem;
-  color: #e2dedb;
-}
-
-input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-  color: #bbb5af;
-}
-input:focus::-webkit-input-placeholder:hover, textarea:focus::-webkit-input-placeholder:hover {
-  color: #cbc6c1;
-}
-
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #aca49c;
-  font-size: 0.875rem;
-}
-input::-moz-placeholder:hover, textarea::-moz-placeholder:hover {
-  font-size: 0.875rem;
-  color: #020268;
-  font-size: 0.875rem;
-  color: #e2dedb;
-}
-
-input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-  color: #bbb5af;
-}
-input:focus::-moz-placeholder:hover, textarea:focus::-moz-placeholder:hover {
-  color: #cbc6c1;
-}
-
-input::placeholder, textarea::placeholder {
-  color: #aca49c;
-  font-size: 0.875rem;
-}
-input::placeholder:hover, textarea::placeholder:hover {
-  font-size: 0.875rem;
-  color: #020268;
-  font-size: 0.875rem;
-  color: #e2dedb;
-}
-
-input:focus::placeholder, textarea::focus:placeholder {
-  color: #bbb5af;
-}
-input:focus::placeholder:hover, textarea::focus:placeholder:hover {
-  color: #cbc6c1;
-}
-
-input::-ms-placeholder, textarea::-ms-placeholder {
-  color: #aca49c;
-  font-size: 0.875rem;
-}
-input::-ms-placeholder:hover, textarea::-ms-placeholder:hover {
-  font-size: 0.875rem;
-  color: #020268;
-  font-size: 0.875rem;
-  color: #e2dedb;
-}
-
-input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-  color: #bbb5af;
-}
-input:focus::-ms-placeholder:hover, textarea:focus::-ms-placeholder:hover {
-  color: #cbc6c1;
-}
-
-#form {
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
   position: relative;
-  width: 500px;
-  margin: 50px auto 100px auto;
+  max-width: 840px;
 }
-#form input {
-  font-family: "Lato", sans-serif;
-  font-size: 0.875em;
-  width: 470px;
-  height: 50px;
-  padding: 0px 15px 0px 15px;
-  background: transparent;
-  outline: none;
-  color: #726659;
-  border: solid 1px #b3aca7;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
+
+/* Left contact page */
+.form-horizontal {
+  /*float: left;*/
+  max-width: 400px;
+  font-family: "Montserrat";
+  font-weight: 400;
 }
-#form input:hover {
-  background: #b3aca7;
-  color: #e2dedb;
+
+.form-control,
+textarea {
+  max-width: 400px;
+  background-color: #000;
+  color: #fff;
+  letter-spacing: 1px;
 }
-#form textarea {
-  width: 470px;
-  max-width: 470px;
-  height: 110px;
-  max-height: 110px;
-  padding: 15px;
-  background: transparent;
-  outline: none;
-  color: #726659;
-  font-family: "Lato", sans-serif;
-  font-size: 0.875rem;
-  border: solid 1px #b3aca7;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
+
+@media (max-width: 768px) {
+  .form-control,
+textarea {
+    max-width: 250px;
+  }
 }
-#form textarea:hover {
-  background: #b3aca7;
-  color: #e2dedb;
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
 }
-#form .Mensaje {
-  width: 502px;
+
+@media (max-width: 768px) {
+  .send-button {
+    width: 250px;
+  }
+}
+.alt-send-button {
+  width: 378px;
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .alt-send-button {
+    width: 200px;
+  }
+}
+.send-text {
+  display: block;
+  margin-top: 10px;
+  font: 700 12px "Montserrat", sans-serif;
+  letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+  transform: translate3d(0px, -29px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px "Montserrat", sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
   padding: 0;
-  margin: -1px 0px 0px 0px;
-  font-family: "Lato", sans-serif;
-  font-size: 0.875rem;
-  color: #b3aca7;
-  outline: none;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #1b1b1b;
   cursor: pointer;
-  border: solid 1px #b3aca7;
-}
-#form .Mensaje:hover {
-  color: #e2dedb;
+  transition: all 0.2s ease-in-out;
 }
 
-@media (max-width: 728px) {
-  #form {
-    width: 200px;
+.social-media-list li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #fff;
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px "Oswald", sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }
+
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
   }
 }
+@media screen and (max-width: 569px) {
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
 
-@media (max-width: 728px) {
-  #form input {
-    width: 200px;
+  .form-control, textarea {
+    margin: 0 auto;
+  }
+
+  .name, .email, textarea {
+    width: 280px;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }
+
+  .social-media-list {
+    left: 0;
+  }
+
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
   }
 }
-
-@media (max-width: 728px) {
-  #form textarea{
-    width: 200px;
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
   }
 }
-
-@media (max-width: 728px) {
-  #form .Mensaje{
-    width: 200px;
-  }
-}
-
 /** Minx **/
 /** Maps **/
 /** Extends **/
-.Titulo__tienda, .contactanos__button, .titulo__yo, .contactanos__subtitulo {
+.h1__historia, .Titulo__tienda {
   display: flex;
   justify-content: center;
 }
@@ -514,13 +520,6 @@ body a {
 body img {
   max-width: 100%;
 }
-   /**  Historia **/
-.h1__historia {
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    color: blue;
-} 
 
 .footer {
   background-color: #050211;
@@ -532,6 +531,109 @@ body img {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 1.5rem;
+}
+
+/** Minx **/
+/** Extends **/
+.h1__historia, .Titulo__tienda {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #070317;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+body p {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f3ebeb;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body img {
+  max-width: 100%;
+}
+
+.footer {
+  background-color: #050211;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer .footer__texto {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/** Maps **/
+/**  Historia **/
+.h1__historia {
+  font-size: 4rem;
+  color: blue;
+}
+
+.p__historia {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1rem 2.2rem;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  display: block;
+  margin: auto;
+}
+
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.third {
+  border-color: #18435f;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #18435f inset, 0 0 0 0 #18435f;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.third:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
 
 /** Box **/
